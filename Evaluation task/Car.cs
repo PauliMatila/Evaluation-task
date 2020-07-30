@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Evaluation_task
 {
@@ -191,13 +189,13 @@ namespace Evaluation_task
             {
                 velocity = 0;
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.WriteLine("Car not moveing.\n");
+                Console.WriteLine("Car is not moving.\n");
                 Console.ResetColor();
             }
-            else if (isEngineOn == false || velocity <= 0)
+            else if (isEngineOn == false)
             {
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.WriteLine("Engine must be on and velocity must be higher than zero.\n");
+                Console.WriteLine("Engine must be on.\n");
                 Console.ResetColor();
             }
         }
